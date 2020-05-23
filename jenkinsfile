@@ -25,6 +25,7 @@ pipeline
                   sh 'wget "https://raw.githubusercontent.com/kamalmurthy/webapp/master/odc.sh"'
                   sh 'chmod +x odc.sh'
                   sh 'bash odc.sh'
+                  sh 'cat /home/ubuntu/OWASP-Dependency-Check/reports/dependency-check-report.xml'
                 }
               }
           stage('Build')
